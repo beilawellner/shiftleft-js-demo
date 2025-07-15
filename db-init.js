@@ -64,7 +64,8 @@ async function createUsers(db) {
       zipCode: 6847,
       creditCard: '8067e0fa-6257-4c3b-ad65-3be58407aec9',
       username: 'Hopper_Alexis',
-      password: 'velit'
+      password: 'velit',
+      city: 'Tel aviv',
     },
     {
       _id: '5da7676ca2d1bd0af6c2d1ea',
