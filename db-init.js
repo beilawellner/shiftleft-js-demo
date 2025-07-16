@@ -7,6 +7,10 @@ function initDB() {
       console.error(err);
       process.exit(1);
     }
+    if (err) {
+      console.error(err);
+      process.exit(1);
+    }
     const db = client.db('tarpit', { returnNonCachedInstance: true });
 
     await createUsers(db);
