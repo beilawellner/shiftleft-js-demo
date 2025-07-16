@@ -50,6 +50,7 @@ async function createUsers(db) {
     const collection = await db.collection('users').drop();
   } catch (ex) {
     console.error(ex);
+    console.error(ex);
   }
   return await db.collection('users').insertMany([
     {
