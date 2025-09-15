@@ -3,10 +3,6 @@ const timeoutRef = setTimeout(console.log, 20000);
 
 function initDB() {
   new MongoDBClient().connect(async function(err, client) {
-    if (err) {
-      console.error(err);
-      process.exit(1);
-    }
     const db = client.db('tarpit', { returnNonCachedInstance: true });
 
     await createUsers(db);
