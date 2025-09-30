@@ -12,6 +12,7 @@ function initDB() {
     await createUsers(db);
     clearTimeout(timeoutRef);
     console.log('Database initialized');
+    console.log('Database initialized');
 
     console.log(await db.stats());
 
