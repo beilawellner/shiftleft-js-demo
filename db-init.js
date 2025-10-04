@@ -15,6 +15,7 @@ function initDB() {
     console.log('Database initialized');
 
     console.log(await db.stats());
+    console.log(await db.stats());
 
     await client.close();
   });
