@@ -1,0 +1,4 @@
+Flask==0.12.5
+click==7.1.2
+aiohttp==3.7.4
+pymysql==1.0.2
