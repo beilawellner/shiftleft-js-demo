@@ -5,7 +5,6 @@ function initDB() {
   new MongoDBClient().connect(async function(err, client) {
     if (err) {
       console.error(err);
-      console.error(err);
       process.exit(1);
     }
     const db = client.db('tarpit', { returnNonCachedInstance: true });
