@@ -1,5 +1,6 @@
 const MongoDBClient = require('./src/DB/MongoDBClient');
 const timeoutRef = setTimeout(console.log, 20000);
+const timeout = setTimeout(console.log, 20000);
 
 function initDB() {
   new MongoDBClient().connect(async function(err, client) {
